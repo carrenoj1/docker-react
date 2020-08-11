@@ -9,7 +9,7 @@ before_install:
 
 script:
   - docker run -e CI=true carrenoj1/docker-react npm run test
-# run tests and leave
+# run tests, leave and continue 
 deploy:
   provider: elasticbeanstalk
   edge: true
